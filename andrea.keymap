@@ -27,7 +27,7 @@
     &kp LCTRL                         &kp LALT                    &kp SPACE     &lt FN           &kp BSPC      &kp LGUI                                                                                              &kp LEFT         &kp DOWN        &kp RIGHT
 			>;
 			
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>; 
+			; 
 			
 		};
 
@@ -47,7 +47,7 @@
     &trans                            &kp LGUI                         &trans          &trans        &trans           &kp C_MENU                                                                                            &kp HOME         &kp PG_DN      &kp END        
 			>;
 
-			sensor-bindings = <&inc_dec_kp BKSP   DEL>;
+			;
 
 		};
 
