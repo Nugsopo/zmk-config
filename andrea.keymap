@@ -35,14 +35,14 @@
 // -----------------------------------------------------------------------------------------
 //   |RGB_TOG| DEL    | 7        | 8      | 9      | /        | -     | F7    | F8    | F9    | F10   | F11   | F12   | TRANS  | TRANS |      TRANS |
 //   | BT_CLR|  CAL   | 4        | 5      | 6      | +        | PSCR  | F1    | F2    | F3    | F4    | F5    | F6    | RESET  |              NEXT T|
-//   |TRANS  |RGB_TOG |  RGB_EFR |RGB_SAI |RGB_BRI | RGB_HUI  | INS   | HOME  | PG_UP | TRANS | TRANS | TRANS |         TRANS  |              PREV T|
+//   | TRANS |LG LS S | 1        | 2      | 3      | ENT      | INS   | HOME  | PG_UP | TRANS | TRANS | TRANS |         TRANS  |              PREV T|
 //   | SHIFT | RGB_EFF| TRANS    |RGB_SAD |RGB_BRD | RGB_HUD  | TRANS | DEL   | END   | PG_DN | TRANS | TRANS | TRANS |               PG_UP |
 //   | TRANS |         GUI   |         TRANS | TRANS    |         TRANS | MENU  |                                            HOME   | PG_DN | END   |
 
 			bindings = <
-    &rgb_ug RGB_TOG  &kp DEL          &kp N7           &kp N8          &kp N9          &kp FSLH          &kp MINUS        &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12          &trans      &trans              &kp C_MUTE
-    &bt BT_CLR       &kp C_AL_CALC    &kp N4           &kp N5          &kp N6          &kp PLUS          &kp PSCRN        &kp SLCK         &kp PAUSE_BREAK  &trans           &trans           &trans           &trans           &trans                          &kp C_PREV
-    &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_HUI   &kp INS          &kp HOME         &kp PG_UP        &trans           &trans           &trans                            &trans                          &kp C_NEXT
+    &rgb_ug RGB_TOG  &kp DEL          &kp N7           &kp N8          &kp N9          &kp FSLH          &kp MINUS        &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12          &trans      &trans                &kp C_MUTE
+    &bt BT_CLR       &kp C_AL_CALC    &kp N4           &kp N5          &kp N6          &kp PLUS          &kp PSCRN        &kp SLCK         &kp PAUSE_BREAK  &trans           &trans           &trans           &trans           &trans                            &kp C_PREV
+    &trans           &kp LG(LS(S))    &kp N1           &kp N2          &kp N3          &kp RET           &kp INS          &kp HOME         &kp PG_UP        &trans           &trans           &trans                            &trans                            &trans                          &kp C_NEXT
     &kp LSHFT        &rgb_ug RGB_EFF  &trans           &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_HUD   &trans           &kp DEL          &kp END          &kp PG_DN        &trans           &trans           &trans                            &kp PG_UP
     &trans                            &kp LGUI                         &trans          &trans        &trans           &kp C_MENU                                                                                            &kp HOME         &kp PG_DN      &kp END        
 			>;
